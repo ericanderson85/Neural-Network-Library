@@ -1,5 +1,3 @@
-package activationfunction;
-
 /**
  * Represents an activation function in a neural network.
  * Introduces non-linearity to the model, enabling it to learn complex patterns.

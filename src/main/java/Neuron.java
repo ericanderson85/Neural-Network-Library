@@ -1,5 +1,3 @@
-import activationfunction.ActivationFunction;
-
 import java.util.Random;
 
 /**

@@ -1,5 +1,3 @@
-import activationfunction.ActivationFunction;
-
 /**
  * Represents a layer in a neural network, consisting of an array of neurons and associated activation functions.
  * This class handles both feed-forward and back-propagation processes for single inputs and batch inputs.

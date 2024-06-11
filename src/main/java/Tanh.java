@@ -1,5 +1,3 @@
-package activationfunction;
-
 public class Tanh implements ActivationFunction {
     /**
      * Computes the tanh activation function.

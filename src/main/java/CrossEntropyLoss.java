@@ -1,5 +1,3 @@
-package lossfunction;
-
 /**
  * Implements the cross-entropy loss function for neural networks.
  */

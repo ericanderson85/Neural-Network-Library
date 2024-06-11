@@ -1,5 +1,3 @@
-package activationfunction;
-
 public class ReLU implements ActivationFunction {
     /**
      * Computes the Rectified NeuralNetwork.Linear Unit activation function, which thresholds at zero.

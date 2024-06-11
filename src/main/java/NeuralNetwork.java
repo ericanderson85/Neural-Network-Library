@@ -1,11 +1,6 @@
-import activationfunction.ActivationFunction;
-import activationfunction.Linear;
-import lossfunction.LossFunction;
-
-import java.io.Serializable;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Random;
-
 
 /**
  * Represents a feed-forward neural network with multiple layers including an output layer with a linear activation function.
@@ -192,6 +187,30 @@ public class NeuralNetwork implements Serializable {
             double[] tempOutput = outputs[index];
             outputs[index] = outputs[i];
             outputs[i] = tempOutput;
+        }
+    }
+    
+    /**
+     * Saves the neural network to a file.
+     * @param filename The name of the file to save the network.
+     * @throws IOException if an I/O error occurs while writing the file.
+     */
+    public void save(String filename) throws IOException {
+        try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(filename))) {
+            outputStream.writeObject(this);
+        }
+    }
+    
+    /**
+     * Loads a neural network from a file.
+     * @param filename The name of the file to load the network from.
+     * @return The loaded neural network.
+     * @throws IOException if an I/O error occurs while reading the file.
+     * @throws ClassNotFoundException if the class of a serialized object cannot be found.
+     */
+    public static NeuralNetwork load(String filename) throws IOException, ClassNotFoundException {
+        try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(filename))) {
+            return (NeuralNetwork) inputStream.readObject();
         }
     }
 }

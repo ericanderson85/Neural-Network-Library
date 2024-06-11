@@ -1,5 +1,3 @@
-package activationfunction;
-
 public class LeakyReLU implements ActivationFunction {
     
     /**

@@ -1,5 +1,3 @@
-package lossfunction;
-
 /**
  * Implements the mean squared error loss function for neural networks.
  */

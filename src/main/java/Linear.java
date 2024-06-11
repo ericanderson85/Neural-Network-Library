@@ -1,5 +1,3 @@
-package activationfunction;
-
 public class Linear implements ActivationFunction {
     /**
      * Computes the linear activation function.

@@ -1,5 +1,3 @@
-package lossfunction;
-
 /**
  * Defines the contract for loss functions in a neural network. Loss functions measure the difference
  * between the predicted output and the target output.

@@ -1,5 +1,3 @@
-package activationfunction;
-
 public class Sigmoid implements ActivationFunction {
     private final int ROUNDING_THRESHOLD = 20;
     
