@@ -13,4 +13,4 @@ Import the jar into IntelliJ IDEA through project structure.
 
 
 Example usage of this project with the MNIST handwriting digits dataset:
-https://github.com/ericanderson85/DigitsRecognition
+https://github.com/ericanderson85/DigitRecognizer
